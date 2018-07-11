@@ -34,9 +34,9 @@ class AirbnbCard extends Component {
         <section className="AirbnbCard-ratings">
           <button className="AirbnbCard-button addStars"
           onClick={this.addStars.bind(this)}>
-Ratings
+&#9734;&#9734;&#9734;&#9734;&#9734;
           </button>
-          <span>&#9734;&#9734;&#9734;&#9734;&#9734;</span>
+          
           <span className="addStars circle">
             {this.state.ratings}
           </span>
