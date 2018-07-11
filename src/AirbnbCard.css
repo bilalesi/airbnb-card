@@ -1,9 +1,25 @@
-.AirbnbCard-container {}
+.AirbnbCard-container {
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 3px 10px #6d6a6a;
+}
 
 .AirbnbCard-ratings {
     background-color: lightblue;
 }
-.AirbnbCard-image {}
+.AirbnbCard-image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.AirbnbCard-image img {
+    border-radius: 3px;
+}
 
 .AirbnbCard-mainheading {
     background-color: pink;
@@ -15,5 +31,15 @@
 
 .AirbnbCard-pricing {
     background-color: lightgreen;
+}
+
+.AirbnbCard-button {
+    appearance: none;
+    border: none;
+    border-radius: 3px;
+    width: 3rem;
+    height: 1.25rem;
+    background-color: grey;
+    margin: 0.5rem 1.5rem ;
 }
 

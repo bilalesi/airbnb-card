@@ -29,12 +29,12 @@ class AirbnbCard extends Component {
           <h1>Visit the Pope and eat some pizza!</h1>
         </section>
         <section className="AirbnbCard-pricing">
-        <h4>Pricing: $333.00</h4>
+        <h3>Pricing: $333.00</h3>
         </section>
         <section className="AirbnbCard-ratings">
           <button className="AirbnbCard-button addStars"
           onClick={this.addStars.bind(this)}>
-Total Ratings
+Ratings
           </button>
           <span>&#9734;&#9734;&#9734;&#9734;&#9734;</span>
           <span className="addStars circle">
