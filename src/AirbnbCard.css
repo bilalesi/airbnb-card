@@ -1,10 +1,19 @@
 .AirbnbCard-container {}
 
-.AirbnbCard-rating {}
+.AirbnbCard-ratings {
+    background-color: lightblue;
+}
+.AirbnbCard-image {}
 
-.AirbnbCard-mainheading {}
+.AirbnbCard-mainheading {
+    background-color: pink;
+}
 
-.AirbnbCard-location {}
+.AirbnbCard-location {
+    background-color: yellow;
+}
 
-.AirbnbCard-price {}
+.AirbnbCard-pricing {
+    background-color: lightgreen;
+}
 
