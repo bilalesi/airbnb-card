@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 import "./AirbnbCard.css";
 
+import PropTypes from 'prop-types';
+
 class AirbnbCard extends Component {
+  static propTypes = {
+    imageSrc: PropTypes.string.isRequired
+  }
     constructor(props) {
       super(props);
       this.state = {
@@ -17,10 +22,11 @@ class AirbnbCard extends Component {
   }
 
     render() {
+      const { imageSrc } = this.props;
       return (
         <div className="AirbnbCard-container">
         <section className="AirbnbCard-image">
-          <img src="https://via.placeholder.com/250x250" />
+          <img src={imageSrc} />
         </section>
         <section className="AirbnbCard-location">
         <h3>Location: Rome, Italy, Earth, Milkyway!</h3>
@@ -35,8 +41,7 @@ class AirbnbCard extends Component {
           <button className="AirbnbCard-button addStars"
           onClick={this.addStars.bind(this)}>
 &#9734;&#9734;&#9734;&#9734;&#9734;
-          </button>
-          
+          </button> 
           <span className="addStars circle">
             {this.state.ratings}
           </span>
