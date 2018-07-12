@@ -6,6 +6,7 @@ import "./App.css";
 
 import Layout from './Layout';
 
+import Header from './Header';
 
 class App extends Component {
   constructor(props) {
@@ -26,6 +27,7 @@ class App extends Component {
                       .map((url) => <AirbnbCard imageSrc={url} key={url} />)
     return (
       <div>
+        <Header title="AirBnB React Cards" />
         <Layout>
       {cards}
       </Layout>
