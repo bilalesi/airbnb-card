@@ -4,12 +4,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     box-shadow: 5px 3px 10px #6d6a6a;
 }
 
 .AirbnbCard-ratings {
-    background-color: lightblue;
+    background-color: white;
 }
 .AirbnbCard-image {
     display: flex;
@@ -22,24 +22,34 @@
 }
 
 .AirbnbCard-mainheading {
-    background-color: pink;
+    background-color: white;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    color: rgb(72, 72, 72) !important;
 }
 
 .AirbnbCard-location {
-    background-color: yellow;
+    background-color: white;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    color: rgb(76, 86, 41);
 }
 
 .AirbnbCard-pricing {
-    background-color: lightgreen;
+    background-color: white;
+    font-size: 20px;
+    margin: 0;
 }
 
 .AirbnbCard-button {
     appearance: none;
     border: none;
     border-radius: 3px;
-    width: 3rem;
+    width: 4.5rem;
     height: 1.25rem;
-    background-color: grey;
+    background-color: white;
     margin: 0.5rem 1.5rem ;
+    color: blue;
 }
 
+.body {
+    margin: 0;
+}
