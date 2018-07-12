@@ -8,6 +8,8 @@ import Layout from './Layout';
 
 import Header from './Header';
 
+import Footer from './Footer';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -31,6 +33,7 @@ class App extends Component {
         <Layout>
       {cards}
       </Layout>
+      <Footer />
       </div>
     );
   }
