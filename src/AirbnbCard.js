@@ -29,13 +29,13 @@ class AirbnbCard extends Component {
           <img src={imageSrc} />
         </section>
         <section className="AirbnbCard-location">
-        <h3>Location: Earth, Milkyway!</h3>
+        <p>Location: Earth, Milkyway!</p>
         </section>
           <section className="AirbnbCard-mainheading">
-          <h1>Visit the Pope!</h1>
+          <p>Visit the Pope!</p>
         </section>
         <section className="AirbnbCard-pricing">
-        <p>Pricing: $333.00</p>
+        <p>Pricing: $333.00 per night</p>
         </section>
         <section className="AirbnbCard-ratings">
           <button className="AirbnbCard-button addStars"
