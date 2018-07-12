@@ -4,6 +4,9 @@ import AirbnbCard from './AirbnbCard';
 
 import "./App.css";
 
+import Layout from './Layout';
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -22,8 +25,10 @@ class App extends Component {
     const cards = this.state.imageUrls
                       .map((url) => <AirbnbCard imageSrc={url} key={url} />)
     return (
-      <div className="App-container">
+      <div>
+        <Layout>
       {cards}
+      </Layout>
       </div>
     );
   }
