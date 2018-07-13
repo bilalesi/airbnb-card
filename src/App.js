@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import AirbnbCard from './AirbnbCard';
-
 import "./App.css";
 
 import Main from './Main';
@@ -27,8 +25,6 @@ class App extends Component {
     };
   }
   render() {
-    const cards = this.state.imageUrls
-                      .map((url) => <AirbnbCard imageSrc={url} key={url} />)
     return (
       <div>
         <Header title="AirBnB React Cards" />
