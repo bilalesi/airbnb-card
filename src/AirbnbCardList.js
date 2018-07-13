@@ -14,8 +14,8 @@ const AirbnbCardList = (props) => {
 );
 };
 
-SocialCardList.propTypes = {
+AirbnbCardList.propTypes = {
     imageUrls: PropTypes.array.isRequired
 };
 
-export default SocialCardList;
+export default AirbnbCardList;
