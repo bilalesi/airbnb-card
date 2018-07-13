@@ -4,7 +4,9 @@ import AirbnbCard from './AirbnbCard';
 
 import "./App.css";
 
-import Layout from './Layout';
+import Main from './Main';
+
+import AirbnbCardList from './AirbnbCardList';
 
 import Header from './Header';
 
@@ -30,9 +32,9 @@ class App extends Component {
     return (
       <div>
         <Header title="AirBnB React Cards" />
-        <Layout>
-      {cards}
-      </Layout>
+         <Main>
+          <AirbnbCardList imageUrls={this.state.imageUrls}/>
+        </Main>
       <Footer />
       </div>
     );
