@@ -26,11 +26,11 @@ class AddCard extends Component {
     render() {
         return (
             <div className="AddCard-container">
-                <input type="text" placeholder="url of the travel destination"
+                <input type="text" placeholder="input the url of your picture"
                  className="AddCard-input" 
                  value={this.state.url} 
                  onChange={this.handleUrlChange.bind(this)}/>
-                <button className="AddCard-button" onClick={this.handleAddCard.bind(this)}>Go</button>
+                <button className="AddCard-button" onClick={this.handleAddCard.bind(this)}>Create Card</button>
              </div>
         );
     }
