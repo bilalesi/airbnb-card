@@ -10,6 +10,8 @@ import Header from './Header';
 
 import Footer from './Footer';
 
+import AddCard from './AddCard';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -24,11 +26,18 @@ class App extends Component {
       ]
     };
   }
+  updateImageUrls(url){
+    this.setState({
+      imageUrls: [...this.state.imageUrls, url]
+    })
+  }
+
   render() {
     return (
       <div>
         <Header title="AirBnB React Cards" />
          <Main>
+          <AddCard onCardAddition = {this.updateImageUrls.bind(this)} />
           <AirbnbCardList imageUrls={this.state.imageUrls}/>
         </Main>
       <Footer />
